@@ -1,0 +1,19 @@
+{
+  "name": "kafka2-prisma",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "abdeladim101Basraoui <abdoobas101@gmail.com>",
+  "license": "MIT",
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "scripts": {
+    "migrate:dev": "prisma migrate dev --name init --init"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.12.0",
+    "@types/node": "^18.15.11",
+    "kafka-node": "^5.0.0",
+    "prisma": "^4.12.0"
+  }
+}
